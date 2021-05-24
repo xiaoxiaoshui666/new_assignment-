@@ -30,13 +30,12 @@ git status -s  --> 红??(未跟踪的文件)     -->  精简版的报告 同 git
                --> 红M(已修改，但还没放入暂存区中)
                --> 绿M(已修改，已放入暂存区中)
 
-跟踪新文件
-git add index.html  -->  就可以跟踪index.html这个文件了   加入暂存区
+跟踪新文件  -->  git add index.html  -->  就可以跟踪index.html这个文件了   加入暂存区
 
-清空
-clear 清空终端记录
+清空  -->  clear 清空终端记录
 
-提交
-git commit -m "添加此次提交的描述信息"  加入到了git仓库里面了
+提交  -->  git commit -m "添加此次提交的描述信息"  加入到了git仓库里面了
 
-当提交仓库后又修改
+撤销对文件的修改  -->  git checkout -- index.html  -->  撤销对index.html文件的修改  本质 git仓库中所保存的文件来覆盖工作区的指定文件
+
+对多个文件添加到暂存区  -->  git add .
