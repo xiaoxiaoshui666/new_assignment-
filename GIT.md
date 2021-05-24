@@ -53,3 +53,20 @@ git status -s  --> 红??(未跟踪的文件)     -->  精简版的报告 同 git
 
 [忽略文件或者不想出现在未跟踪的列表中]
 在根目录新增一个 .gitgnore 配置文件  -->  在此文件里面添加需要忽略的文件的匹配规则  -->  终端  -->  
+
+[查看提交历史]
+git log  -->  按照时间先后列出所有的提交历史，最近的提交在最上面
+git log -2  --> 最近2条历史，数字可选填
+git log -2 --pretty=oneline  --> 在一行上展示最近2条历史
+git log -2 --pretty=format:"%h | %an | %ar | %s"  --> 自定义历史记录的输出格式  
+%h哈希值 | %an作者名字 | %ar距离现在的时间 | %s提交说明
+
+[回到指定的版本]
+1. git log --pretty=oneline  --> 在一行上展示最近历史
+2. git reset --hard CommitID  -->  输入指定提交历史的CommitID提交ID（CommitID在最前面）
+# 在旧版本回到最近版本
+1. git reflog --pretty=oneline  -->  在旧版本中查看所有提交的历史（不是 git log）
+2. git reset --hard CommitID
+
+[粘贴复制]
+选中  -->  鼠标右键  --> Copy（复制） --> 鼠标右键  --> Paste（粘贴）
