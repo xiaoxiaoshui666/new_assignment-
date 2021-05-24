@@ -47,7 +47,7 @@ git status -s  --> 红??(未跟踪的文件)     -->  精简版的报告 同 git
 移除所有的暂存区里的文件  -->  git reset HEAD .
 
 移除仓库里面的文件
-从git仓库和工作区同时移除  -->  git rm index2.html
+从git仓库和工作区同时移除  -->  git rm -f index2.html
 
 只从git仓库中移除  -->  git rm --cached index2.html
 
