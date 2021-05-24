@@ -1,5 +1,5 @@
 # 忽略 GIT.md 文件
 GIT.md
 
-# 忽略 test文件下所有的文件
+# 忽略 test目录下所有的文件
 test/
