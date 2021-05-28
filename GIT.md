@@ -21,7 +21,7 @@ git config -h   在git终端里面查看
 # 在本地
 项目文件的根目录  -->  git终端  -->  输入命令 git init  --> 会创建一个名为.git的隐藏目录，这个.git目录就是当前项目的Git仓库
 
-[查看状态报告]
+[查看文件状态]
 git status  -->  Untracked files(未跟踪管理的文件)  --> Git在之前的快照(提交)中没有这些文件
             -->  Changes to be committed(已跟踪管理的文件)  -->  已暂存状态
             -->  Changes not staged for commit(已修改，但还没放入暂存区中)   modified 文件名 绿字已修改已放入暂存区   红字已修改未放入暂存区
